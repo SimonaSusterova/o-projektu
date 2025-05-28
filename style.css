@@ -1,14 +1,74 @@
-/* Používáme intuitivní výpočet rozměrů prvků. */
-*, *:before, *:after {
-  box-sizing: border-box;
+nav {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-html {
-  font-family: sans-serif;
+
+
+.menu > li {
+  position: relative;
+}
+
+
+
+.menu a:hover {
+  color: #0077cc;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(170, 21, 21, 0.1);
+  z-index: 10;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .container {
-  max-width: 20rem;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 800px;
+  margin: 0 auto;      
+  text-align: center; 
+}
+
+body {
+  background-color: azure;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  color:#0077cc;
+  font-size: 2.5em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    font-size: 1.8em;
+    line-height: 1.6;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu {
+  color: #0077cc;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.ice {
+  width: 250px;
 }
