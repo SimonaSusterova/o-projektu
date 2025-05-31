@@ -69,6 +69,6 @@ p {
 }
 
 .menu a {
-  color: #0077cc; /* nebo jiný odstín modré dle potřeby */
-  text-decoration: none; /* volitelné: odstraní podtržení */
+  color: #0077cc; 
+  text-decoration: none; 
 }
