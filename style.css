@@ -72,3 +72,16 @@ p {
   color: #0077cc; 
   text-decoration: none; 
 }
+
+@keyframes rotate-once {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ice.rotate-once {
+  animation: rotate-once 1s linear;
+}
